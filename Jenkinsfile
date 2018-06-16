@@ -1,11 +1,5 @@
 node{
 	stage('Build'){
-		checkout([$class: 'GitSCM', 				
-							branches: [[name: "origin/master"]], 
-							userRemoteConfigs: [[
-							url: 'https://github.com/pipelineascodecourse/scripted-when-changeRequest.git']]
-							])
-
 		println "env.CHANGE_ID: ${env.CHANGE_ID}"
 		println "env.CHANGE_URL: ${env.CHANGE_URL}"
 		println "env.CHANGE_TITLE: ${env.CHANGE_TITLE}"
@@ -22,11 +16,3 @@ node{
 		}
 	}
 }
-
-
-
-
-
-
-
-
