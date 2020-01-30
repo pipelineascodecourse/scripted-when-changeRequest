@@ -12,7 +12,7 @@ node{
 			echo "pull request is found"
 		}
 		else {
-			echo "pull request is not found"
+			echo "PR is not found!!!"
 		}
 	}
 }
